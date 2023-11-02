@@ -17,7 +17,7 @@ jobs:
       - name: Print next greeting
         run: echo "First workflow worked successfully!"
       - name: Print goodbye
-        run: "Thank you! Good bye!"
+        run: echo "Thank you! Good bye!"
 
 
   
