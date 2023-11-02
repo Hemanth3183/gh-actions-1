@@ -1,5 +1,23 @@
 name: First Workflow
-on:
+
+# Manually trigger the workflow.
+on: workflow_dispatch
+
+# Actions to perform.
+
+jobs:
+  # Name the job. No casing required.
+  firstjob:
+    # Define the runner on which the job should run.
+    runs-on: ubuntu-latest
+    # Define the steps to be executed under the job. Steps are defined as lists ("-").
+    steps: 
+      - name: Print greeting
+        run: echo "Hello world!"
+      - name: Print next greeting
+        run: echo "First workflow worked successfully!"
+      - name: Print goodbye
+        run: "Thank you! Good bye!"
 
 
   
