@@ -1,0 +1,11 @@
+name: Second workflow
+on: workflow_dispatch
+jobs:
+  secondjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print commands
+        run: |
+          echo "Hello"
+          echo "World"
+          echo "!"
